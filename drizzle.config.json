@@ -1,0 +1,9 @@
+{
+    "out": "./migrations-folder",
+    "schema": "./utils/schema.js",
+    "breakpoints": false,
+    "driver": "pg",
+    "dbCredentials": {
+      "connectionString": "postgresql://neons_owner:mctaI4DPG6XZ@ep-tiny-butterfly-a56bgaps.us-east-2.aws.neon.tech/celebrity-crushes?sslmode=require"
+  }
+}
