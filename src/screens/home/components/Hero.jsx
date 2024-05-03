@@ -29,6 +29,8 @@ function Hero() {
                     <option>sunset</option>
                     <option>winter</option>
                     <option>retro</option>
+                    <option>forest</option>
+                    <option>sunset</option>
                 </select>
             </div>
         </div>

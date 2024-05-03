@@ -15,17 +15,20 @@ const router = createBrowserRouter([
   {
     path: "/new",
     element: <AddNewScreen />,
+  },
 ]);
 
 function App() {
   const [count, setCount] = useState(0)
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('winter')
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <div data-theme={theme} className='flex flex-col items-center p-4 md:p-10'>
         <div className='max-w-2xl w-full items-center'>
           <RouterProvider router={router}>
+            
+            </RouterProvider>
         </div>
       </div>
     </ThemeContext.Provider>
