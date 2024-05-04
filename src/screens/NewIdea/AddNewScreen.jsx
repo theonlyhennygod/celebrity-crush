@@ -5,7 +5,7 @@ import moment from 'moment';
 import { crushes } from '../../../utils/schema';
 import { db } from '../../../utils/index';
 import { useNavigate } from 'react-router-dom';
-
+import Footer from '../home/components/Footer';
 
 export default function AddNewScreen() {
 
@@ -15,13 +15,16 @@ export default function AddNewScreen() {
     const [showAlert, setShowAlert] = useState(false);
     const [existingUser, setExistingUser] = useState(false);
 
+    // Check if user has already entered a username
+
     useEffect(() => {
-        if(localStorage.getItem('username')){
+        if (localStorage.getItem('username')) {
             setUsername(localStorage.getItem('username'));
             setExistingUser(true);
         }
     }, [])
 
+    // Save Crush to Database
 
     const onSaveHandler = async () => {
         const result = await db.insert(crushes)
@@ -50,9 +53,9 @@ export default function AddNewScreen() {
                 <span>Congratulations! Your new crush has been added to the list.</span>
             </div>}
 
-            <button 
-            onClick={() => navigation('/')}
-            className="btn mt-7"><ChevronLeft />Back</button>
+            <button
+                onClick={() => navigation('/')}
+                className="btn mt-7"><ChevronLeft />Back</button>
 
             <h2 className="font-bold text-2xl mt-5">Why keep it a secret? Let the world know 🌟</h2>
             <div className='flex flex-col mt-7 gap-2'>
@@ -71,11 +74,13 @@ export default function AddNewScreen() {
                     value={username}
                     type="text" placeholder="Username" className="input input-bordered w-full border-primary" />
             </div>}
-
+            
             <button
                 onClick={() => onSaveHandler()}
                 disabled={!(crush && username)}
-                className="btn w-full btn-primary mt-7">Send <Send className='h-4 w-4' /></button>
+                className="btn w-full btn-primary mt-7">Send <Send className='h-4 w-4' />
+            </button>
+            <Footer />
         </div>
     )
 }

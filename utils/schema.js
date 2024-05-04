@@ -1,5 +1,6 @@
 import { pgTable, serial, varchar, integer } from "drizzle-orm/pg-core";
 
+// Define the schema
 
 export const crushes = pgTable("crushes", {
     id:serial('id').primaryKey(),

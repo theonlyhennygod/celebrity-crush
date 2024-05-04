@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import HomeScreen from './screens/home/HomeScreen'
 import { ThemeContext } from './context/ThemeContext'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import AddNewScreen from './screens/NewIdea/AddNewScreen'
+
+// Define the routes for the app
 
 const router = createBrowserRouter([
   {
@@ -27,8 +27,8 @@ function App() {
       <div data-theme={theme} className='flex flex-col items-center p-4 md:p-10'>
         <div className='max-w-2xl w-full items-center'>
           <RouterProvider router={router}>
-            
-            </RouterProvider>
+
+          </RouterProvider>
         </div>
       </div>
     </ThemeContext.Provider>
