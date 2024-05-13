@@ -7,7 +7,7 @@ function Hero() {
 
     return (
         <div className='my-8 flex flex-col items-center gap-5'>
-            <h2 className='text-3xl font-bold text-center'>Share Your Celebrity Crush</h2>
+            <h2 className='text-3xl font-bold text-center'>Celebrity Crush</h2>
             <h2 className='text-center my-3'>
                 <strong className='text-secondary'>Like your favorite celebrities. </strong>
                 Share as many crushes, No account needed!
