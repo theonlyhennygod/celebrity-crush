@@ -21,4 +21,4 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 This project is licensed under the MIT License. You can find more information in the [LICENSE](./LICENSE) file.
 
 ## Contact
-If you have any questions or need further assistance, feel free to contact the project maintainer at [email@example.com](mailto:hi@argenisdelarosa.com).
+If you have any questions or need further assistance, feel free to contact the project maintainer at [email](mailto:hi@argenisdelarosa.com).

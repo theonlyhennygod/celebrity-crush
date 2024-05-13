@@ -42,15 +42,17 @@ function CrushItem({ crush, index, refreshData }) {
     return (
         <div className='my-5 p-5 border shadow-lg rounded-lg'>
             <div className='flex gap-7'>
-                <h2 className='flex gap-2'><span>{index + 1}. </span>{crush?.content}</h2>
+                <div className='flex-grow'>
+                    <h2 className='flex gap-2'><span>{index + 1}. </span>{crush?.content}</h2>
+                </div>
                 <div className='flex flex-col items-center'>
                     <h2
                         onClick={upVoteHandler}
-                        className={`text-lg hover:bg-gray-200 rounded-md p-1 cursor-pointer px-2 ${isUpvoted(crush.id) && 'bg-slate-200' }`}>🔥</h2>
+                        className={`text-lg hover:bg-gray-200 rounded-md p-1 cursor-pointer px-2 ${isUpvoted(crush.id) && 'bg-slate-200'}`}>🔥</h2>
                     <h2 className='text-lg rounded-md p-1 text-center font-bold'>{crush?.vote}</h2>
                     <h2
                         onClick={downVoteHandler}
-                        className={`text-lg hover:bg-gray-200 rounded-md p-1 cursor-pointer px-2 ${isdownvoted(crush.id) && 'bg-slate-200' }`}>💩</h2>
+                        className={`text-lg hover:bg-gray-200 rounded-md p-1 cursor-pointer px-2 ${isdownvoted(crush.id) && 'bg-slate-200'}`}>💩</h2>
                 </div>
             </div>
 
