@@ -2,7 +2,8 @@
 
 # DEMO
 
-https://github.com/theonlyhennygod/celebrity-crush/assets/144828210/4b8d009f-b253-4212-8522-d1accf462a8b
+https://github.com/theonlyhennygod/celebrity-crush/assets/144828210/c0d9bb24-e4a2-447c-af63-65ef079c8ad3
+
 
 ## Description
 This React + Vite anonymous application allows random internet users to share their celebrity crushes. Users can anonymously submit the names of their favorite celebrities without revealing their identity. The application ensures privacy and confidentiality, making it a safe space for users to express their admiration for their celebrity crushes.
